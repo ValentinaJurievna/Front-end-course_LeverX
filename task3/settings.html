@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleSettings.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <a class="nav__brand" href="#">LEVERX GROUP</a>
+            <ul class="nav__menu">
+                <li class="nav__item">
+                  <a class="nav__link active" aria-current="page" href="#">Address Book</a>
+                </li>
+                <li class="nav__item">
+                  <a class="nav__link disabled" href="#">Leave Requests</a>
+                </li>           
+            </ul>
+            <ul class="nav__menu-account">
+                <li class="nav__item">
+                  <a class="nav__link" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>&ensp;ANNA SMITH</a>
+                  <a class="nav__link exit" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/><path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Roles & Permissions</h1>
+        <hr>
+        <table>
+            <tr>
+                <td></td>
+                <td ><p class="addressBookRole">Address book role</p></td>
+                <td><p class="addressBookRole">Admin</p></td>
+            </tr>
+            <tr>
+                <td>
+                    <p>{name}</p>
+                </td>
+                <td>
+                    <button type="button" class="addressBookRole" id="role-employee">Employee</button>
+                    <button type="button" id="role-hr">Hr</button>
+                </td>
+                <td >
+                    <button class="addressBookRole" id="role-admin">Admin</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

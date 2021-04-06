@@ -1,0 +1,201 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: Gotham Pro, Arial, sans-serif;
+}
+
+hr {
+    display: block;
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background: grey;    
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+header {
+    background-color:  #3D68F0;
+    color: white;
+    font-family: Gotham Pro;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__menu, .nav__brand {
+    display: flex;
+    align-items: center;
+}
+
+.nav__menu {
+    margin-left: 400px;
+}
+
+.nav__menu-account {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav__brand {
+    margin-left: 50px;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav__item {
+    display: flex;
+    padding: 10px;
+    margin-left: 10px;
+    align-items: stretch;
+}
+
+.nav__link.exit {
+    margin-right: 50px;
+    margin-left: 20px;
+}
+
+
+.nav__link, .nav__brand {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    line-height:1 ;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: whitesmoke
+}
+
+a.active::after {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 0; 
+        width: 100%;
+        height: 1px; 
+        background-color: #6C89F5; 
+        content: "";	
+}
+
+/* container */
+
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+
+.row {
+    display: flex;
+}
+
+.employee-profile {
+    margin-top: 40px;
+}
+
+.employee-profile h1, p, .employee-profile__buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.employee-profile h1 {
+    padding-bottom: 0;
+    margin-bottom: 7px;
+}
+
+.employee-profile p {
+    padding-top: 0;
+    margin-top: 0;
+}        
+
+.employee-profile__button-id, .employee-profile__button-card {
+    text-decoration: none;
+    background-color: #C4C4C4;
+    border-radius: 30px;
+    padding: 10px;
+    color: black;
+    margin-left: 20px;
+}
+
+.employee-info {
+    margin-left: 150px;
+}
+
+.title {
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 40px;
+}
+
+.employee-info__value {
+    margin-left: 200px;
+}
+
+.employee-info table td {
+    padding: 7px;
+}
+
+.employee-info__general, .employee-info__contacts, .employee-info__profile, .employee-info__employment {
+    padding-top: 40px;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.employee-info__department, .employee-info__room {
+    display: flex;
+}
+
+
+.addressBookRole {
+    margin-left: 300px;
+}
+
+
+
+
+
+.switch-btn {
+    display: inline-block;
+    width: 72px; /* ширина */
+    height: 38px; /* высота */ 
+    background: #bfbfbf; /* цвет фона */
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition-duration: 300ms; /* анимация */
+}
+.switch-btn::after {
+    content: "";
+    height: 32px; /* высота кнопки */
+    width: 32px; /* ширина кнопки */ 
+    background: #fff; /* цвет кнопки */
+    top: 3px; /* положение кнопки по вертикали относительно основы */
+    left: 3px; /* положение кнопки по горизонтали относительно основы */
+    transition-duration: 300ms; /* анимация */
+    position: absolute;
+    z-index: 1;
+}
+.switch-on {
+    background: #118c4e;
+}
+.switch-on::after {
+    left: 37px;
+}

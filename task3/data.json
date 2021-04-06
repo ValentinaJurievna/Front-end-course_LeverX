@@ -1,0 +1,177 @@
+[
+	{
+		"id": "1",
+		"title": "Konstantin Mironov",
+		"text": "Константин Миронов",
+		"role": "Employee",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 543
+		},
+		"contacts": {
+			"internalPhone": "123",
+			"mobilePhone": "+375(29)765-65-87",
+			"email": "kkkkk@leverx.com"
+		},
+		"profileInfo": {
+			"hireDate": "12 Jan 2019",
+			"status": "Active"
+		},
+		"employmentInfo": {
+			"start": ["12 Jan 2018", "19 June 2020"],
+			"dayDuration": ["6 hours", "8 hours"]	
+		},
+		"image": "https://github.com/ValentinaJurievna/photos/blob/main/1.png?raw=true",
+		"password": 12345
+	},
+	{
+		"id": "2",
+		"title": "Daria Petrova",
+		"text": "Дарья Петрова",
+		"role": "Employee",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 981
+		},
+		"contacts": {
+			"internalPhone": "786",
+			"mobilePhone": "+375(29)313-65-87",
+			"email": "ddddd@leverx.com"
+		},
+		"profileInfo": {
+			"hireDate": "26 Feb 2019",
+			"status": "Active"
+		},
+		"employmentInfo": {
+			"start": ["12 Aug 2018", "13 June 2010"],
+			"dayDuration": ["8 hours", "4 hours"]	
+		},
+		"image": "https://github.com/ValentinaJurievna/photos/blob/main/2.png?raw=true",
+		"password": 54321
+	},
+	{
+		"id": "3",
+		"title": "Victoria Skvortsova",
+		"text": "Виктория Скворцова",
+		"role": "Admin",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 762
+		},
+		"contacts": {
+			"internalPhone": "654",
+			"mobilePhone": "+375(29)986-23-43",
+			"email": "vvvvv@leverx.com"
+		},
+		"profileInfo": {
+			"hireDate": "25 Jan 2015",
+			"status": "Active"
+		},
+		"employmentInfo": {
+			"start": ["12 Jan 2015", "19 Jan 2020"],
+			"dayDuration": ["5 hours", "7 hours"]	
+		},
+		"image": "https://github.com/ValentinaJurievna/photos/blob/main/3.png?raw=true",
+		"password": 56789
+	},
+	{
+		"id": "4",
+		"title": "Nadezhda Korneva",
+		"text": "Надежда Корнева",
+		"role": "Employee",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 716
+		},
+		"contacts": {
+			"internalPhone": "321",
+			"mobilePhone": "+375(29)321-65-87",
+			"email": "nnnnn@leverx.com"
+		},
+		"profileInfo": {
+			"hireDate": "18 Jan 2018",
+			"status": "Active"
+		},
+		"employmentInfo": {
+			"start": ["12 Feb 2019", "23 June 2020"],
+			"dayDuration": ["6 hours", "7 hours"]	
+		},
+		"image": "https://github.com/ValentinaJurievna/photos/blob/main/4.png?raw=true",
+		"password": 98765
+	},
+	{
+		"id": "5",
+		"title": "Semyon Orlov",
+		"text": "Семён Орлов",
+		"role": "Employee",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 981
+		},
+		"contacts": {
+			"internalPhone": "765",
+			"mobilePhone": "+375(29)765-34-65",
+			"email": "sssss@leverx.com"
+		},
+		"profileInfo": {
+			"hireDate": "9 Jan 2019",
+			"status": "Active"
+		},
+		"employmentInfo": {
+			"start": ["9 Jan 2018", "19 Feb 2019"],
+			"dayDuration": ["5 hours", "8 hours"]	
+		},
+		"image": "https://github.com/ValentinaJurievna/photos/blob/main/5.png?raw=true",
+		"password": 111111
+	},
+	{
+		"id": "6",
+		"title": "Artem Kravtsov",
+		"text": "Артём Кравцов",
+		"role": "Employee",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 762
+		},
+		"contacts": {
+			"internalPhone": "835",
+			"mobilePhone": "+375(29)835-65-87",
+			"email": "aaaaa@leverx.com"
+		},
+		"profileInfo": {
+			"hireDate": "3 Jan 2018",
+			"status": "Active"
+		},
+		"employmentInfo": {
+			"start": ["3 Jan 2018", "27 Jan 2019"],
+			"dayDuration": ["6 hours", "4 hours"]	
+		},
+		"image": "https://github.com/ValentinaJurievna/photos/blob/main/6.png?raw=true",
+		"password": 555555
+	}
+]
+

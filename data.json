@@ -1,0 +1,81 @@
+[
+	{
+		"title": "Konstantin Mironov",
+		"text": "Константин Миронов",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 543
+		},
+		"image": "img/1.png"
+	},
+	{
+		"title": "Daria Petrova",
+		"text": "Дарья Петрова",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 981
+		},
+		"image": "img/2.png"
+	},
+	{
+		"title": "Victoria Skvortsova",
+		"text": "Виктория Скворцова",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 762
+		},
+		"image": "img/3.png"
+	},
+	{
+		"title": "Nadezhda Korneva",
+		"text": "Надежда Корнева",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 716
+		},
+		"image": "img/4.png"
+	},
+	{
+		"title": "Semyon Orlov",
+		"text": "Семён Орлов",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 981
+		},
+		"image": "img/5.png"
+	},
+	{
+		"title": "Artem Kravtsov",
+		"text": "Артём Кравцов",
+		"department": {
+			"icon": "img/suitcase.png",
+			"specialty": "Web & Mobile"
+		},
+		"room": {
+			"icon": "img/door.png",
+			"number": 762
+		},
+		"image": "img/6.png"
+	}
+]
+

@@ -1,0 +1,236 @@
+$mainColor:#3D68F0;
+$secondaryColor: #6C89F5;
+
+%links {
+	color: black;
+	text-decoration: none;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: Gotham Pro, sans-serif;
+}
+
+a:active:focus,
+a:focus,
+.btn:active:focus,
+.btn:focus {
+outline: 0!important;
+outline-color: transparent!important;
+outline-width: 0!important;
+outline-style: none!important;
+box-shadow: 0 0 0 0 rgba(0,123,255,0);
+}
+
+
+.navbar {
+	background-color: $mainColor;
+}
+
+.nav-item a, .search-block__navbar-nav a {
+	text-decoration: none;
+	position: relative;
+	line-height: 3;
+}
+
+
+.nav-item a:after, .search-block__navbar-nav a:after {
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: $secondaryColor; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.nav-item a:hover:after,
+.nav-item a:focus:after,
+.search-block__navbar-nav a:hover:after,
+.search-block__navbar-nav a:focus:after {
+	width: 100%;
+}
+
+#navbarNav {
+	margin-left: 250px;
+}
+
+a.active:after {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 0; 
+	width: 100%;
+	height: 2px; 
+	background-color: $secondaryColor; 
+	content: "";
+} 
+
+
+
+
+/* search-block */
+
+.search-block__navbar-nav {
+	list-style: none;
+	padding: 0;
+}
+
+.search-block__navbar-nav a {
+	color: black;
+}
+
+.btn-outline-success {
+	background-color: $mainColor;
+	color: white;
+}
+
+.btn-outline-success:hover {
+	background-color: $secondaryColor;
+}
+
+
+/* employees-block */
+
+.employees-block {
+	margin-left: 5em;
+	.employees-block__cards {
+		display: flex;
+	}
+	.employees-block__list-button {
+		width: 25px;
+		height: 25px;
+	} 
+	.employees-block__grid-button {
+		width: 20px;
+		height: 20px;
+	}
+	.employees-block__list {
+		list-style: none;
+	}
+}
+
+
+
+svg:hover #list {
+	fill: $mainColor;
+	stroke:  $mainColor;
+	cursor: pointer;
+}
+
+.card__title, .card__text, .card__body {
+	text-align: center;
+}
+
+.card__link {
+	@extend %links;
+}
+
+.card__img {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 430px;
+} 
+
+#sort-asc, #sort-desc {
+	font-size: 15px;
+}
+
+hr {
+	margin-top: 0;
+}
+
+
+.filter {
+	filter: blur(5px);
+}
+
+#modal-order {
+	position: fixed;
+	z-index: 999;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-top: 100px;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content  {
+	margin: auto;
+	padding: 20px;
+	max-width: 700px;
+	max-height: 700px;
+	border-radius: 10px;
+	.modal-content__title {
+		display: flex;
+		flex-direction: row;
+	}	
+}
+
+.modal__title {
+	@extend %links;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+
+.modal__form {
+	display: flex;
+	flex-direction: column;
+	margin-top: 10px;
+	input {
+		border: 1px solid $mainColor;
+	}
+}
+
+
+.modal__form input, .modal__button, #role {
+	border-radius: 10px;
+	background: white;
+    display: block;
+    font-size: 0.9rem;
+	margin: 10px auto;
+    padding: 10px;
+    width: 50%;
+    height: 50px;
+}
+
+.signUp {
+	margin-top: 10px;
+	text-align: center;
+	a {
+		@extend %links;
+	}
+}
+
+
+.modal__button {
+	background-color: $mainColor;
+	color: white;
+	border: none;
+}
+
+.close {
+	font-size: 3rem;
+	position: absolute;
+	top: 0;
+	right: 35px;
+	color:  white;
+}
+
+.close:hover {
+	color: $mainColor;
+	cursor: pointer;
+}

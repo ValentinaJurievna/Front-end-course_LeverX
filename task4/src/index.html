@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+	<title>LEVERX GROUP</title>
+</head>
+<body>
+
+	<div class="modal" id="modal-order">
+		<span class="close">&times;</span>
+		<div class="modal-content" id="modal-signIn">
+			<h2 class="modal__title">Вход</h2>
+			<form action="#" class="modal__form" id="form">
+				<label for="email">    
+					<input type="email" class="modal__email" name="email" id="email-signIn" placeholder="Email" required />
+				</label>
+				<label for="password">                
+					<input type="password" class="modal__password" name="password" id="password-signIn" placeholder="Пароль" required />
+				</label>
+					<button class="modal__button">Войти</button>
+			</form>
+			<p class="signUp">У вас еще нет аккаунта?<a href="#" id="signUp"> <b>Регистрация</b></a></p>
+		</div>
+
+		<div class="modal-content" id="modal-signUp" style="display: none;">
+			<h2 class="modal__title">Регистрация</h2>
+			<form action="#" class="modal__form" id="form1" name="person">
+				<label for="name" >    
+					<input type="text" class="modal__name" name="name" id="name" placeholder="Имя" required />
+				</label>
+				<label for="surname" >    
+					<input type="text" class="modal__surname" name="surname" id="surname" placeholder="Фамилия" required />
+				</label>
+				<select name="role" id="role">
+					<option value="Admin">Admin</option>
+					<option value="Employee">Employee</option>
+					<option value="Editor">Editor</option>
+				</select>  
+				<label for="email">    
+					<input type="email" class="modal__email" name="email" id="email-signUp" placeholder="Email" required />
+				</label>
+				<label for="password">                
+					<input type="password" class="modal__password" name="password" id="password-signUp" placeholder="Пароль" required />
+				</label>
+					<button class="modal__button">Зарегистрироваться</button>
+			</form>
+			<p class="signUp">Уже есть аккаунт?<a href="#" id="signIn"> <b>Вход</b></a></p>
+		</div>
+	</div>
+
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	  <div class="container">
+	    <a class="navbar-brand" href="#">LEVERX GROUP</a>
+	    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarNav">
+	      <ul class="navbar-nav">
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="#">Address Book</a>
+	        </li>
+	        <li class="nav-item ml-3">
+	          <a class="nav-link disabled" href="#">Leave Requests</a>
+	        </li>    
+			<li class="nav-item ml-3">
+				<a class="nav-link" id="settings" href="settings.html">Settings</a>
+			  </li>     
+	      </ul>
+	      <ul class="navbar-nav ml-auto">
+	      	<!-- <li class="nav-item mr-3">
+	          <a class="nav-link d-flex align-items-center" aria-current="page" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16"><path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/><path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/></svg>&ensp;ANNA SMITH</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/><path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/></svg></a>
+	        </li> -->
+			<li>
+				<a class="nav-link" id="modal-button" href="#">Войти</a>
+			</li>
+	      </ul>
+
+	    </div>
+	  </div>
+	</nav>
+
+	<div class="container d-flex flex-row mt-5" id="container">
+		<div class="search-block col-lg-3">
+			<nav class="search-block__navbar">
+				<ul class="search-block__navbar-nav d-flex flex-row">
+			        <li class="search-block__navbar-item ml-0">
+			          <a class="nav-link active" aria-current="page" href="#" id="active">Basic Search</a>
+			        </li>
+			        <li class="search-block__navbar-item">
+			          <a class="nav-link disabled" href="#">Advanced Search</a>
+			        </li>        
+	      		</ul>
+			</nav>
+			<form class="search-block__form d-flex flex-column mt-4">
+        		<input class="form-control mr-2" id="search" name="searchBar" type="search" placeholder="Search" aria-label="Search">
+        		<button class="btn btn-outline-success mt-3" type="submit">Search</button>
+      		</form>
+		</div>
+		
+
+		<div class="employees-block d-flex flex-column">
+			<div class="d-flex flex-row mt-3 justify-content-between align-items-center">
+				<h6 class="employees-block__title"><span id="result">6</span> employees displayed</h6>
+				<div class="d-flex flex-row align-items-baseline">
+					<button class="btn m-0" type="submit" id="sort-asc">По возрастанию <hr></button>
+					<button class="btn mr-4" type="submit" id="sort-desc">По убыванию <hr></button>
+					<a href="#" class="employees-block__grid-button mr-3" id="grid"><img src="../img/grid.svg" class="img-fluid" alt="grid"></a>
+					<a href="#" class="employees-block__list-button" id="list"><img src="../img/list.svg" class="img-fluid mt-1" alt="list"></a>
+				</div>
+			</div>
+			<table class="employees-block__list mt-2" id="listView" style="display: none;">	
+			</table>
+			<div class="employees-block__cards flex-wrap justify-content-between" id="employees"></div>				
+		</div>		
+	</div>	
+
+
+  	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+  	<script type="module" src="script.js"></script>
+</body>
+</html>

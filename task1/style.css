@@ -1,0 +1,124 @@
+
+.navbar {
+	background-color:  #3D68F0;
+	color: white;
+}
+.nav-item a, .search-block__navbar-nav a {
+	text-decoration: none;
+	position: relative;
+	line-height: 3;
+}
+
+.hide {
+	display: none;
+}
+
+
+.nav-item a:after, .search-block__navbar-nav a:after {
+	display: block;
+	position: absolute;
+	top: 60px;
+	left: 0; 
+	width: 0;
+	height: 2px; 
+	background-color: #6C89F5; 
+	content: "";
+	transition: width 0.3s ease-out; 
+}
+
+.nav-item a:hover:after,
+.nav-item a:focus:after,
+.search-block__navbar-nav a:hover:after,
+.search-block__navbar-nav a:focus:after {
+	width: 100%;
+}
+
+#navbarNav {
+	margin-left: 250px;
+}
+
+a.active:after {
+	display: block;
+	position: absolute;
+	top: 50px;
+	left: 0; 
+	width: 100%;
+	height: 2px; 
+	background-color: #6C89F5; 
+	content: "";
+}
+
+
+/* search-block */
+
+.search-block__navbar-nav {
+	list-style: none;
+	padding: 0;
+}
+
+.search-block__navbar-nav a {
+	color: black;
+}
+
+.btn-outline-success {
+	background-color: #3D68F0;
+	color: white;
+}
+
+.btn-outline-success:hover {
+	background-color: #6C89F5;
+}
+
+
+/* employees-block */
+
+.employees-block {
+	margin-left: 5em;
+}
+
+.employees-block__cards {
+	display: flex;
+}
+
+.employees-block__list-button {
+	width: 25px;
+	height: 25px;
+} 
+
+.employees-block__grid-button {
+	width: 20px;
+	height: 20px;
+}
+
+.employees-block__list {
+	list-style: none;
+}
+
+svg:hover #list{
+
+	fill: #3D68F0;
+	stroke:  #3D68F0;
+	cursor: pointer;
+
+}
+
+.card__title, .card__text, .card__body {
+	text-align: center;
+}
+
+.card__link {
+	text-decoration: none;
+	color: black;
+}
+
+.card__img {
+	width: 250px;
+	height: 250px;
+	display: flex;
+	justify-content: center;
+}
+
+.card {
+	width: 430px;
+}
+
